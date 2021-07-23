@@ -24,6 +24,7 @@ export const Experience = ({ cardList, card, data }: Props) => {
           {data.map((item) => (
             <Card
               card={card}
+              key={item.role}
               company={item.company}
               role={item.role}
               content={item.content}
