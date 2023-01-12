@@ -46,19 +46,13 @@ export const Hero = ({ heroList, item }: Props) => {
           >
             Helping to provide the support and care needed to vulnerable people
           </MotionHeading>
-
           <MotionStack
             direction="row"
             spacing="2"
             initial={{ opacity: 0, x: -10 }}
             variants={item}
           >
-            <Button
-              as="a"
-              href="/snehil-tripathi.pdf"
-              size="lg"
-              colorScheme="lavender"
-            >
+            <Button as="a" href="/cv.pdf" size="lg" colorScheme="lavender">
               CV
             </Button>
             <Button

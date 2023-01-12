@@ -1,7 +1,6 @@
-import { Heading } from "@chakra-ui/react";
 import { Experience } from "../components/Experience/Experience";
 import { Hero } from "../components/Hero/Hero";
-import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
   const heroList = {
@@ -28,6 +27,9 @@ export default function Home() {
   const card = { visible: { y: 10, opacity: 1 } };
   return (
     <>
+      <Head>
+        <title>Snehil Tripathi | Work Portfolio</title>
+      </Head>
       <Hero heroList={heroList} item={item} />
       <Experience
         cardList={cardList}
