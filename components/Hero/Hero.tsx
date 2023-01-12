@@ -46,29 +46,27 @@ export const Hero = ({ heroList, item }: Props) => {
           >
             Helping to provide the support and care needed to vulnerable people
           </MotionHeading>
-          <MotionText
-            maxWidth="xl"
-            initial={{ opacity: 0, x: -10 }}
-            variants={item}
-          >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-            unde. Deserunt adipisci ipsa fugit itaque quis minima hic
-            necessitatibus dolor rerum, alias corrupti cumque quo impedit nemo
-            nostrum quam sint.
-          </MotionText>
+
           <MotionStack
             direction="row"
             spacing="2"
             initial={{ opacity: 0, x: -10 }}
             variants={item}
           >
-            <Button size="lg" colorScheme="lavender">
+            <Button
+              as="a"
+              href="/snehil-tripathi.pdf"
+              size="lg"
+              colorScheme="lavender"
+            >
               CV
             </Button>
-            <Button size="lg" colorScheme="lavender">
-              LinkedIn
-            </Button>
-            <Button size="lg" colorScheme="lavender">
+            <Button
+              as="a"
+              href="mailto:snehil030@gmail.com"
+              size="lg"
+              colorScheme="lavender"
+            >
               Email me
             </Button>
           </MotionStack>
